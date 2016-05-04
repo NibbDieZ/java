@@ -11,19 +11,22 @@
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    public static void main (String[] args){
+    public static void main (String[] args) {
+        int num1, num2, num3, num4, max;
         Scanner intro = new Scanner (System.in);
-        System.out.println ("Ingrese radio del cilindro");
-        double radio = intro.nextDouble();
-        System.out.println ("Ingrese altura del cilindro");
-        double altura = intro.nextDouble();
-        double pi = 3.14;
-        double area_base = pi * (radio*radio);
-        double area_lateral = (2*pi) * radio * altura;
-        double area_total = (2*area_base) + area_lateral;
-        double volumen = area_base * altura;
-        System.out.println ("El area total del cilindro es "+area_total);
-        System.out.println ("El volumen del cilindro es "+volumen);
-    }
-    
+        System.out.println ("Ingrese 4 números");
+        num1 = intro.nextInt();
+        num2 = intro.nextInt();
+        num3 = intro.nextInt();
+        num4 = intro.nextInt();
+        if ((num1 >= num2) && (num1 >= num3) && (num1 >= num4)) {
+            max = num1;
+        } else if ((num2 >= num1) && (num2 >= num3) && (num2 >= num4)) {
+            max = num2;
+        } else if ((num3 >= num1) && (num3 >= num2) && (num3 >= num4)) {
+            max = num3;
+        } else { max = num4;
+                }
+        System.out.println ("El mayor es "+max);
+            }
 }

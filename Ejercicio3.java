@@ -11,13 +11,18 @@
 import java.util.Scanner;
 
 public class Ejercicio3 {
-    public static void main (String[] args){
+    public static void main (String[] args) {
         Scanner intro = new Scanner (System.in);
-        System.out.println ("Ingrese edad");
-        int edad = intro.nextInt();
-        long bisiestos = edad/4;
-        int dias_vividos = edad * 360;
-        int dias_totales = (int)(bisiestos + dias_vividos);
-        System.out.println ("Dias vividos "+dias_totales);
+        System.out.println ("Ingrese nota (entre 1,0 y 7,0)");
+        double nota = intro.nextDouble();
+        if ((nota >= 1.0) && (nota <= 3.9)) {
+        System.out.println ("Insuficiente");
+        } else if ((nota >= 4.0) && (nota <= 4.9)) {
+        System.out.println ("Suficiente");
+        } else if ((nota >= 5.0) && (nota <= 5.9)) {
+        System.out.println ("Bien");
+        } else if ((nota >= 6.0) && (nota <= 7.0)) {
+        System.out.println ("Muy bien");
+        }
     }
 }
