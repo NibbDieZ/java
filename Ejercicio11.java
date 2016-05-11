@@ -8,33 +8,41 @@
  *
  * @author Nibb10
  */
-import java.io.*;
+import java.util.Scanner;
 
 public class Ejercicio11 {
-    public static void main (String[] args) throws IOException {
-        BufferedReader bufEntrada = new BufferedReader (new InputStreamReader(System.in));
-        double notas_parciales;
-        double promedio_talleres;
-        double promedio_tareas;
-        double nota_exposicion;
-        double porc_notas_parciales;
-        double porc_promedio_talleres;
-        double porc_promedio_tareas;
-        double porc_nota_exposicion;
-        double promedio_notas;
-        System.out.println ("Ingrese notas parciales");
-        notas_parciales = Double.parseDouble (bufEntrada.readLine());
-        System.out.println ("Ingrese promedio talleres");
-        promedio_talleres = Double.parseDouble (bufEntrada.readLine());
-        System.out.println ("Ingrese promedio de tareas");
-        promedio_tareas = Double.parseDouble (bufEntrada.readLine());
-        System.out.println ("Ingrese nota de exposicion");
-        nota_exposicion = Double.parseDouble (bufEntrada.readLine());
-        porc_notas_parciales = (notas_parciales*50)/100;
-        porc_promedio_talleres = (promedio_talleres*25)/100;
-        porc_promedio_tareas = (promedio_tareas*15)/100;
-        porc_nota_exposicion = (nota_exposicion*10)/100;
-        promedio_notas = porc_notas_parciales+porc_promedio_talleres+porc_promedio_tareas+porc_nota_exposicion;
-        System.out.println ("El promedio de notas es "+promedio_notas);
+    public static void main (String[] args){
+        Scanner intro = new Scanner (System.in);
+        int cont;
+        double aprob = 0;
+        double reprob = 0;
+        double max = 0;
+        double min = 7;
+        double acum_notas = 0;
+        System.out.println("Ingrese cantidad de notas");
+        double cant_notas = intro.nextDouble();
+        for (cont=1; cont <= cant_notas; cont++){
+            System.out.println("Ingrese nota Nº"+cont);
+            double nota = intro.nextDouble();
+            acum_notas = acum_notas + nota;
+            if (nota >= 4.0) {
+                aprob = aprob + 1;
+            }
+            else { reprob = reprob + 1;
+            }
+            if (nota > max) {
+                max = nota;
+            }
+            if (nota < min) {
+                min = nota;
+            }
+        }
+        double prom = (acum_notas/cant_notas);
+        double porc = (reprob/(aprob + reprob)) *100;
+        if ((prom >= 4.0) && (porc < 50)) {
+            System.out.println("Aprobado");
+        }else {
+            System.out.println("Reprobado");
+        }
     }
 }
