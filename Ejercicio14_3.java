@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio14 {
+public class Ejercicio14_3 {
     public static void main (String[] args) {
         double monto1, monto2, monto3, total;
         float porc_monto1, porc_monto2, porc_monto3;
