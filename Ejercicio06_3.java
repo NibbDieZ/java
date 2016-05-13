@@ -11,7 +11,7 @@
 
 import java.io.*;
 
-public class Ejercicio06 {
+public class Ejercicio06_3 {
     public static void main(String args[]) throws IOException {
         BufferedReader bufEntrada = new BufferedReader (new InputStreamReader(System.in));
         int cant_comp_ita;
