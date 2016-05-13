@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio4 {
+public class Ejercicio04_4 {
     public static void main (String[] args) {
         double horas_extras;
         double horas_trabajadas;
