@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
         
-public class Ejercicio08 {
+public class Ejercicio08_3 {
     public static void main (String[] args) {
         Scanner intro = new Scanner (System.in);
         System.out.println ("Ingrese sueldo");
