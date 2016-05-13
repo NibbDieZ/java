@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio11 {
+public class Ejercicio11_5 {
     public static void main (String[] args){
         Scanner intro = new Scanner (System.in);
         int cont;
