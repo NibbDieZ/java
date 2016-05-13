@@ -9,7 +9,7 @@
  * @author Nibb10
  */
 import java.util.Scanner;
-public class Ejercicio07 {
+public class Ejercicio07_3 {
     public static void main (String[] args) {
         Scanner intro = new Scanner (System.in);
         System.out.println ("Ingrese edad");
