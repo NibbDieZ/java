@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio01 {
+public class Ejercicio01_3 {
     public static void main (String[] args){
         Scanner intro = new Scanner (System.in);
         System.out.println ("Ingrese radio del cilindro");
