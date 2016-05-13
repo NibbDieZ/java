@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio10 {
+public class Ejercicio10_3 {
     public static void main (String[] args) {
         Scanner intro = new Scanner (System.in);
         System.out.println ("Ingrese cantidad de alumnos aprobados");
