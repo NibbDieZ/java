@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio12 {
+public class Ejercicio12_5 {
     public static void main (String[] args){
         Scanner sc = new Scanner (System.in);
         System.out.println("Sandwich: $300");
