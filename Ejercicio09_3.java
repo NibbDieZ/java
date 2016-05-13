@@ -10,7 +10,7 @@
  */
 
 
-public class Ejercicio09 {
+public class Ejercicio09_3 {
     public static void main (String[] args) {
         int tiempo_1 = (int)(Math.random()*45+1);
         int tiempo_2 = (int)(Math.random()*45+1);
