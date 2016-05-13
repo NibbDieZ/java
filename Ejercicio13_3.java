@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio13 {
+public class Ejercicio13_3 {
     public static void main (String[] args) {
         Scanner intro = new Scanner (System.in);
         System.out.println ("Ingrese costo del vehiculo");
