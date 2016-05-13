@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio03_4 {
     public static void main (String[] args) {
         Scanner intro = new Scanner (System.in);
         System.out.println ("Ingrese nota (entre 1,0 y 7,0)");
