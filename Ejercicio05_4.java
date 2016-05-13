@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio5 {
+public class Ejercicio05_4 {
     public static void main (String[] args) {
         int cont;
         int horas_extras;
