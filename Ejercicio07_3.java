@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Nibb10
+ * @author Nibb10.
  */
 import java.util.Scanner;
 public class Ejercicio07_3 {
