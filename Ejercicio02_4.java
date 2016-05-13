@@ -10,7 +10,7 @@
  */
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class Ejercicio02_4 {
     public static void main (String [] args) {
         Scanner intro = new Scanner (System.in);
         int B20000 = 0;
